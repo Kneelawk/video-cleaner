@@ -26,7 +26,8 @@ fn main() -> anyhow::Result<()> {
     info!("Inputting from: {:?}", &args.input);
     // info!("Outputting to: {:?}", &args.output);
 
-    // http://dranger.com/ffmpeg/tutorial01.html
+    let input = format::input(&args.input).context("Opening input file")?;
+    format::context::input::dump(&input, 0, Some(&args.input.to_string_lossy()));
 
     Ok(())
 }

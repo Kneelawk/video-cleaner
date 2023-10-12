@@ -522,6 +522,7 @@ dependencies = [
  "anyhow",
  "clap",
  "ffmpeg-next",
+ "lazy_static",
  "tracing",
  "tracing-subscriber",
  "vsprintf",
