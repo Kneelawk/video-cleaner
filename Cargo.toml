@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.71"
 clap = { version = "4.2.7", features = ["derive"] }
-ffmpeg-next = { version = "6.0.0", features = ["static", "build", "build-license-gpl", "build-license-nonfree", "build-license-version3", "build-lib-opus", "build-lib-vpx"] }
+ffmpeg-next = { version = "6.0.0", features = ["static", "build"] }
 tracing = "0.1.37"
 tracing-subscriber = "0.3.17"
 vsprintf = "2.0.0"
